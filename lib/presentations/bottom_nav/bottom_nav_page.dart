@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:slice_ui_grocery/assets/constants/variables.dart';
+import 'package:slice_ui_grocery/presentations/home/home_page.dart';
 
 class BottomNavPage extends StatefulWidget {
   const BottomNavPage({super.key});
@@ -12,7 +13,7 @@ class _BottomNavPageState extends State<BottomNavPage> {
   int _currentIndex = 0;
 
   static const List<Widget> _widgetOptions = <Widget>[
-    Placeholder(),
+    HomePage(),
     Placeholder(),
     Placeholder(),
     Placeholder(),
@@ -61,9 +62,10 @@ class _BottomNavPageState extends State<BottomNavPage> {
               ),
               label: 'Cart',
             ),
-            BottomNavigationBarItem(
+            const BottomNavigationBarItem(
                 icon: Icon(Icons.favorite), label: 'Favorite'),
-            BottomNavigationBarItem(icon: Icon(Icons.person), label: 'Profile'),
+            const BottomNavigationBarItem(
+                icon: Icon(Icons.person), label: 'Profile'),
           ],
           currentIndex: _currentIndex,
           showSelectedLabels: false,
