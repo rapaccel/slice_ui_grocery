@@ -60,7 +60,7 @@ class _LoginPageState extends State<LoginPage> {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         const Text(
-                          'Sign In',
+                          'Masuk',
                           style: TextStyle(
                               fontSize: 24,
                               fontWeight: FontWeight.bold,
